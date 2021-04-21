@@ -1,0 +1,356 @@
+/** ----------------------------- */
+/* Basic Setup */
+/** ----------------------------- */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color:rgb(5, 5, 5);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/** ----------------------------- */
+
+
+
+h1,h2,h3{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1{
+    margin: 0  !important;
+    color: #fff;
+    font-size: 250%;
+    letter-spacing: 1px;
+
+}
+
+h2{
+    font-size: 180%;
+    letter-spacing: 1px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h2::after{
+    display: block;
+    height: 2px;
+    width: 100px;
+    content: "";
+    color: #e97006;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgb(240, 163, 19);
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+.iconbig{
+    font-size: 40px;
+    display: block;
+    color: rgb(221, 146, 7);
+}
+
+.box{
+    padding: 10px;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.long-copy{
+    width: 70%;
+    margin-left: 15%;
+    line-height: 145%;
+}
+
+.section-features .long-copy{
+    margin-bottom: 10px;
+}
+
+
+header{
+    background-image: linear-gradient(rgba(32, 30, 30, 0.555),rgba(49, 49, 47, 0.753)), url(./Images/hero.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+    background-attachment: fixed;
+} 
+
+.hero-text-box{
+    width: 1140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+}
+
+/* ===============Buttons ================ */
+
+.btn:link,
+.btn:visited{
+     display: inline-block;
+     padding: 10px 30px;
+     text-decoration: none;
+     font-weight: 300;
+     border-radius: 200px;
+     color: #fff;
+     transition: background-color 0.2s, border :0.2s, color:0.2s;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #e97006 ;
+    color: #fff;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e97006;
+    border: 1px solid #e97006;
+}
+
+.btn-ghost{
+    color: #fff;
+    border: 1px solid #e97006;
+}
+
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin: 20px 0;
+}
+
+.main-nav{
+    float: right;
+    margin: 55px 0;
+    list-style:none;
+}
+
+
+
+.main-nav li{
+    display: inline-block;
+    margin: 0 40px;
+    padding: 10px 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e97006;
+}
+
+section{
+    padding: 80px 0;
+}
+
+
+/* =======Meals showcase ==========*/
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meals-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background:#000;
+}
+
+.meals-photo img{
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+}
+
+.meals-photo img:hover{
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transform: scale(1.03);
+    transition: transform 0.5s,opacity 0.5s;
+}
+
+.meals{
+padding: 0;
+}
+
+
+/* ==================== How it work ============== */
+
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top:30px;
+}
+
+.steps-box:last-child{
+    padding-right: 3%;
+    margin-top: 70px;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.works-steps{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.works-steps div{
+    color: rgb(212, 139, 3);
+    float: left;
+    display: inline-block;
+    border: 2px solid rgb(204, 134, 5);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 150%;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 25px;
+}
+
+.btn-app img{
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.works-steps:last-of-type{
+    margin-bottom: 60px;
+}
+
+
+
+.clearfix{zoom:1}
+.clearfix::after{
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.section-steps{
+    background: #f4f4f4;
+}
+
+/* ============== City Section ============== */
+
+.city-img img{
+    height: auto;
+    width: 100%;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.city-details ul li{
+ list-style: none;
+}
+
+.iconsmall{
+    color: orange;
+    font-size: 80%;
+    text-align: center;
+/* secrets to align text and icons */
+margin-top:-2px;
+vertical-align: middle;
+line-height: 120%;
+
+}
+
+
+a:link,
+a:visited{
+    color: orange;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid rgb(211, 138, 2);
+    transition: border-bottom 0.2s,color 0.2s;
+}
+
+a:hover,
+a:active{
+    color: #555;
+    text-decoration: none;
+    padding-bottom: 1px;
+    transform: scale(1.15);
+    border-bottom: 1px solid transparent;
+}
+
+.section-testimonials{
+    background-image: linear-gradient(rgb(21 19 19 / 79%),rgb(51 27 27 / 70%)), url(/css/Images/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    }
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 20px;
+    display: block;
+}
+
+cite img{
+    border-radius: 50%;
+    height: 60px;
+    vertical-align: middle;
+    width: auto;
+    margin-right: 10px;
+}
+
+blockquote:before{
+    content: ”201C″;
+    font-size: 400%;
+    display: block;
+}
