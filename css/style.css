@@ -354,3 +354,105 @@ blockquote:before{
     font-size: 400%;
     display: block;
 }
+
+
+/* ============ Section Plan ============= */
+
+.section-plan{
+    background-color: #b4b2b24f;
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 9px 3px 2px #dcdcdc ;
+}
+
+.plan-box div{
+    padding:15px;
+    border-bottom: 1px solid rgba(207, 194, 194, 0.788);
+}
+
+.plan-price{
+    font-size: 300%;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: orange;
+    text-decoration: none;
+}
+
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+.plan-price-meal{
+    font-size: 80%;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 3% 1%;
+}
+
+.plan-box div:first-child{
+    background-color: #f7f4f4ad;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border:0;
+}
+
+/* ======== Write to Us ======== */
+
+.contact-form{
+    width: 60%;
+    margin:0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select{
+    padding: 4px;
+    border-radius:2px;
+    width: 100%;
+    border:1px solid #ccc
+}
+
+textarea{
+    height: 120px;
+}
+
+input[type="button"]{
+    background-color: rgb(255, 255, 255);
+    font-weight: 200;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 166, 0);
+    padding: 7px;
+}
+input[type="button"]:active,
+input[type="button"]:hover{
+    background-color: rgb(230, 154, 12);
+    font-weight: 200;
+    border-radius: 10px;
+    border: 2px solid rgb(110, 110, 108);
+    padding: 7px;
+    transition: 0.5s ;
+    transform: scale(1.13)
+}
+
+input[type="checkbox"]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline: none;
+}
