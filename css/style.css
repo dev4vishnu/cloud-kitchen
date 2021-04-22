@@ -24,7 +24,7 @@ html{
 }
 
 
-/** ----------------------------- */
+/** ------------ Top -------------- */
 
 
 
@@ -177,7 +177,7 @@ section{
 }
 
 
-/* =======Meals showcase ==========*/
+/* ======= Meals showcase ==========*/
 
 .meals-showcase{
     list-style: none;
@@ -455,4 +455,63 @@ input[type="checkbox"]{
 
 *:focus{
     outline: none;
+}
+
+/* ============Foooter============ */
+
+footer{
+    background-color: rgb(70, 52, 35);
+    width: 100%;
+    margin: 0 auto;
+    height: 120px;
+}
+
+.footer-nav li{
+list-style: none;
+float: left;
+padding: 2%;
+color: #fff;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+    border: 0;
+    font-size: 80%;
+    text-decoration: none;
+}
+
+.footer-nav{
+    width: 80%;
+    margin-left: 20px;
+}
+
+.social-icons{
+    float: right;
+    width: 60%;
+}
+.social-icons ul li{
+    list-style: none;
+    float: left;
+    padding: 2%;
+}
+
+.social-icons li a:link,
+.social-icons li a:visited{
+    text-decoration: none;
+    border: 0;
+}
+
+
+.insta:hover{
+    color: rgb(255, 70, 70);
+}
+
+.fb:hover{
+    color: rgb(13, 112, 241);
+}
+.logo-googleplus:hover{
+    color: crimson;
+}
+.logo-twitter:hover{
+    color: rgb(0, 54, 172);
 }
